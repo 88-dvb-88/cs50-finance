@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+Quote
+
+{% endblock %}
+
+{% block main %}
+
+<h3> A share of {{ symbol["name"]}} ({{ symbol["symbol"]}})</h3>
+<h4><strong>Price</strong></h4> <h3>{{symbol["price"] | usd}}</h3>
+<br>
+<button class=" btn btn-primary" type="button" onclick="history.back()">Quote again</button>
+
+{% endblock %}
